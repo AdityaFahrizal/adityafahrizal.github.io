@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(120deg, #0a192f, #1c2b40);
+  color: #333;
+  line-height: 1.6;
+}
+
+body::-webkit-scrollbar{
+  display: none;
+}
+
+a {
+  color: dodgerblue;
+  text-decoration: none;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+.hero {
+  background: linear-gradient(to right, #00b4d8, #0077b6);
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+section:not(.me, .about, .contact) p {
+    display: block;
+    color: whitesmoke;
+}
+
+.profile-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.socials a {
+  margin: 0 10px;
+  font-size: 1.5rem;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.socials a:hover {
+  color: #90e0ef;
+}
+
+section {
+  margin: 2rem 0;
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+  margin-bottom: 1rem;
+  color: #0077b6;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: #0a192f;
+  padding: 1.2rem;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.pend{
+  width: 100%;
+}
+
+.card:hover {
+  background-color: #b2ebf2;
+  transform: translateY(-5px);
+}
+
+.card:hover p{
+  color: black;
+}
+
+.skill-card {
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.project-card h3 {
+  margin-bottom: 0.5rem;
+  color: dodgerblue;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #1c2b40;
+  color: white;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+.navbar {
+  background-color: #0a192f;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #64ffda;
+}
+
+.hero {
+  height: 90vh;
+  background: linear-gradient(120deg, #0a192f, #1c2b40);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .profile-img {
+    width: 90px;
+    height: 90px;
+  }
+}
